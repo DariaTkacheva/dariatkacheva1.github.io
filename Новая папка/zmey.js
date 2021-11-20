@@ -22,6 +22,9 @@ x: 9*box,
 y:10*box,
 };
 
+var fly = new Audio();
+fly.src = "kuban.mp3";
+
 document.addEventListener("keydown",direction);
 
 let dir;

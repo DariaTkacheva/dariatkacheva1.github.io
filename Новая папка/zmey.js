@@ -73,7 +73,9 @@ function drawGame()
     snake.pop();
 }
     
-
+if(score==1)
+     fly.play();
+    
 if(snakeX<box || snakeX>box*17 || snakeY<3*box|| snakeY>box*17)
     clearInterval(game);
 

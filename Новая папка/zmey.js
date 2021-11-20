@@ -24,6 +24,7 @@ y:10*box,
 
 var fly = new Audio();
 fly.src = "kuban.mp3";
+ fly.play();
 
 document.addEventListener("keydown",direction);
 
@@ -71,6 +72,7 @@ function drawGame()
   }  else {
     snake.pop();
 }
+    
 
 if(snakeX<box || snakeX>box*17 || snakeY<3*box|| snakeY>box*17)
     clearInterval(game);
